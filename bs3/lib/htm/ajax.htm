@@ -106,6 +106,7 @@ $(function () {
         $.ajax({
             url : '/some/api',
             success : function(data) {
+console.log(data)
                 $('table tbody').append(data);
                 $('table').trigger('footable_redraw');
             }
